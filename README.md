@@ -1,7 +1,7 @@
 # Wordpress on Google Cloud Run
 
 ## Build and deploy
-```bash
+```bash 
 gcloud builds submit --tag gcr.io/PROJECT_NAME/IMAGE_NAME // build an image
 gcloud run deploy wordpress [--region REGION] --platform managed --image gcr.io/PROJECT_NAME/IMAGE_NAME --set-env-vars DB_NAME=wordpress,DB_USER=root,DB_PASSWORD=mysecretpassword,DB_HOST=database_host --port 80 // deploy to Cloud run
 ```
